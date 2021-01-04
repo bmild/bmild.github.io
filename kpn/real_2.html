@@ -1,0 +1,71 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type"/>
+<title>Burst Imaging Results</title>
+<script src='js/jquery-1.8.3.min.js'></script>
+<script src='js/jquery.elevatezoom.js'></script>
+<script src='js/compare.js'></script>
+<link rel="stylesheet" type="text/css" href="css/comparison.css">
+<link rel="stylesheet" href="files/font.css">
+</head>
+<body>
+
+<center>
+<h1><a href="index.html">Burst Denoising with Kernel Prediction Networks</a></h1>
+<h2>Supplemental Material &mdash; Real cellphone bursts</h2>
+<a href="real_0.html">Kitchen</a> /
+<a href="real_1.html">Piano</a> /
+<a href="real_2.html">Fire</a> /
+<a href="real_3.html">Puzzle</a> /
+<a href="real_4.html">Garden</a> /
+<a href="real_5.html">Shoes</a>
+<hr/>
+
+<h3>Fire</h3>
+<table>
+	<tr>
+		<th>
+			<a href='images/real_supp/img_2_0_ref.png' > <img id="viewer"  onload="setBorder(this);" src="images/real_supp/img_2_0_ref.png" width=890px></a>
+			<br/>
+		</th>
+		<th width="180">
+			<p class='thumbnail_title'>Ref. frame</p>
+			<img class='thumbnail' id='img1' onload="setBorder(this);" src='images/real_supp/img_2_0_ref.png' onClick="replaceImage(this,viewer);" />
+
+			<p class='thumbnail_title'>Average</p>
+			<img class='thumbnail' id='img2' onload="setBorder(this);" src='images/real_supp/img_2_1_avg.png' onClick="replaceImage(this,viewer);" />
+
+			<p class='thumbnail_title'>HDR+</p>
+			<img class='thumbnail' id='img3' onload="setBorder(this);" src='images/real_supp/img_2_2_hdrplus.png' onClick="replaceImage(this,viewer);" />
+		<!-- </th>
+		<th width="180"> -->
+			<p class='thumbnail_title'>NLM</p>
+			<img class='thumbnail' id='img4' onload="setBorder(this);" src='images/real_supp/img_2_3_nlm.png' onClick="replaceImage(this,viewer);" />
+
+			<p class='thumbnail_title'>VBM4D</p>
+			<img class='thumbnail' id='img5' onload="setBorder(this);" src='images/real_supp/img_2_4_vbm4d.png' onClick="replaceImage(this,viewer);" />
+		<!-- </th>
+		<th width="180"> -->
+			<p class='thumbnail_title'>Ours (KPN)</p>
+			<img class='thumbnail' id='img6' onload="setBorder(this);" src='images/real_supp/img_2_5_ours_kpn.png' onClick="replaceImage(this,viewer);" />
+		</th>
+	</tr>
+</table>
+<p>You can cycle through the images by pressing '1' to '6'.</p>
+<p>This burst consists of 8 photos taken on a Nexus 6P cellphone.</p>
+<p>Interface adapted from <a href="http://jankautz.com/supplemental/FlexISP/">here</a></p>
+<hr/>
+
+<script>
+document.onready = function() { 
+	$("#viewer").elevateZoom(); // start zoom
+	setTimeout(function() { replaceImage(img1,viewer); }, 500); // make sure everything is loaded and set image
+}
+document.onkeydown = keyHandler;
+</script>
+
+
+</body>
+
+</html>

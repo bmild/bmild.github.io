@@ -1,0 +1,127 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110862391-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-110862391-2');
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Burst Denoising with Kernel Prediction Networks</title>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="files/style.css">
+<link rel="stylesheet" href="files/font.css">
+
+</head>
+
+<style type="text/css">
+	#myvalignContainer1O { position:relative }
+	#myvalignContainer1I { position:absolute; top:50%; height:10em; margin-top:-5em }
+</style>
+<style type="text/css">
+	#myvalignContainer2 { line-height:4em }
+</style>
+
+<body>
+
+
+<!-- Title -->
+<div class="container">
+
+<span class="title">Burst Denoising with Kernel Prediction Networks</span>
+
+<table align="center" border="0" width="1000" class="authors">
+	<tbody><tr>
+	<td class="author"> <a href="http://eecs.berkeley.edu/~bmild">Ben Mildenhall</a><sup>1*</sup></td>
+	<td class="author"> <a href="http://jonbarron.info">Jon Barron</a><sup>2</sup></td>
+	<td class="author"> <a href="http://people.csail.mit.edu/jiawen/">Jiawen Chen</a><sup>2</sup></td>
+	<td class="author"> Dillon Sharlet</a><sup>2</sup></td>
+  <td class="author"> Ren Ng</a><sup>1</sup></td>
+  <td class="author"> Robert Carroll</a><sup>2</sup></td>
+	</tr></tbody>
+</table>
+
+<table align="center" border="0" width="1000" class="affiliations">
+<tbody>
+	<tr>
+    <td class="affliation" align="center">
+      <sup>1</sup><a href="http://eecs.berkeley.edu/">UC Berkeley</a>
+      &emsp;&emsp;&emsp;&emsp;
+      <sup>2</sup><a href="https://research.google.com/">Google</a>
+    </td>
+  </tr>
+</tbody>
+</table>
+
+<table align="right" style="font-size:10px"><tbody>
+<tr><td align="right"> <font color="gray">* Work done while interning at Google.</font> </td></tr>
+</tr>
+</tbody></table>
+
+
+<br>
+<br>
+
+<table align="center"><tbody><tr>
+<td><center><img src="files/teaser.png" width="1100" ></center></td>
+</tr>
+<tr><td>
+<table border="0">
+</tbody>
+<tr><td class="caption">A qualitative evaluation of our model on real image bursts from a handheld camera in a low-light environment.
+The reference frame from the input burst (a) is sharp, but noisy.
+Noise can be reduced by simply averaging (b) a burst of similar images, but this can fail in the presence of motion.
+Our approach (f) learns to use the information present in the entire burst to denoise a single frame, producing lower noise and avoiding artifacts compared to baseline techniques (c - e).</td></tr>
+</tbody></table>
+
+
+<!-- Abstract -->
+<div class="section">
+<span class="section-title">Abstract </span>
+<p> We present a technique for jointly denoising bursts of images taken from a handheld camera.
+In particular, we propose a convolutional neural network architecture for predicting spatially varying kernels that can both align and denoise frames, a synthetic data generation approach based on a realistic noise formation model, and an optimization guided by an annealed loss function to avoid undesirable local minima. Our model matches or outperforms the state-of-the-art across a wide range of noise levels on both real and synthetic data. </p>
+<!-- <p class="bibtex">
+@article{xue17toflow,
+&nbsp; author = {Xue, Tianfan and Chen, Baian and Wu, Jiajun and Wei, Donglai and Freeman, William T},
+&nbsp; title = {Video Enhancement with Task-Oriented Flow},
+&nbsp; journal = {arXiv},
+&nbsp; year = {2017}
+}
+</p> -->
+
+
+</div>
+
+<div class="section">
+<span class="section-title">Links </span>
+<ul>
+<li><a href="https://arxiv.org/abs/1712.02327">Paper (arXiv)</a></li>
+<li><a href="https://youtu.be/giA2rpN3Iv8?t=1h27m58s">Spotlight talk at CVPR 2018</a></li>
+<li><a href="real_0.html">Results on real cellphone burst data (html)</a></li>
+<li><a href="synth_results.html">Results on synthetic burst data (html)</a></li>
+<li><a href="https://github.com/google/burst-denoising">Code</a></li>
+<li><a href="https://drive.google.com/open?id=1UptBXV4f56wMDpS365ydhZkej6ABTFq1">Synthetic test set (as numpy data)</a></li>
+</ul>
+<!-- <br>
+<b>Downloads:</b></br>
+<ul>
+<li> Paper: <a href="https://arxiv.org/abs/1711.09078">arXiv</a>
+</li>
+<li> Code: Coming soon!
+</li>
+</ul> -->
+
+</div>
+
+<p>&nbsp;</p>
+<!-- end .container --></div>
+
+
+
+</body></html>

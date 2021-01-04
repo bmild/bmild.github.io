@@ -1,0 +1,70 @@
+body
+{
+/*	text-align: left;
+	font-family: "Trebuchet MS";
+	font-size: 14px;
+	color: #404040;*/
+	font-family:"Open Sans",Segoe,"Segoe UI","Lucida Sans Unicode","Lucida Grande","Avenir","Seravek","Ubuntu","DejaVu Sans","Trebuchet MS",Verdana,Arial,sans-serif;
+	color: #000;
+	background-color: #fff;
+	font-weight:normal;
+	font-size: 14px;
+}
+
+h1
+{
+	margin-top: 25px;
+	font-size: 24px;
+}
+
+h2
+{
+	font-size: 20px;
+}
+
+h3
+{
+	font-size: 18px;
+}
+
+h4
+{
+	font-size: 16px;
+}
+
+
+
+a {
+	text-decoration: underline;
+	color: #555;
+}
+a:visited {
+	color: #555;
+}
+a:active {
+	color: #b34436;
+}
+a:hover {
+	color: #b34436;
+}
+
+
+img.thumbnail
+{
+	border-style: solid;
+	width: 100;
+}
+
+p.thumbnail_title
+{
+	font-size: 15px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+img
+{
+	border-style: solid;
+	border-width: 5px;
+	border-color: black;
+}
