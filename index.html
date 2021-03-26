@@ -16,7 +16,7 @@
   <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
 
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-  <link rel="icon" type="image/png" href="seal_icon.png">
+  <link rel="icon" type="image/png" href="img/seal_icon.png">
   <title>Ben Mildenhall</title>
   <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
   <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -65,6 +65,97 @@
 
   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
     
+          <tr onmouseout="mipnerf_stop()" onmouseover="mipnerf_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='mipnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="img/mipnerf_ipe.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='img/mipnerf_ipe.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function mipnerf_start() {
+                  document.getElementById('mipnerf_image').style.opacity = "1";
+                }
+
+                function mipnerf_stop() {
+                  document.getElementById('mipnerf_image').style.opacity = "0";
+                }
+                mipnerf_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+              <a href="http://jonbarron.info/mipnerf">
+                <papertitle>Mip-NeRF: A Multiscale Representation for Anti-Aliasing Neural Radiance Fields</papertitle>
+              </a>
+              <br>
+              <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+              <strong>Ben Mildenhall</strong>,
+              <a href="http://matthewtancik.com/">Matthew Tancik</a>,
+              <a href="https://phogzone.com/">Peter Hedman</a>,
+              <a href="http://www.ricardomartinbrualla.com/">Ricardo Martin-Brualla</a>,
+              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>
+              <br>
+        <em>arXiv</em>, 2021 
+              <br>
+              <a href="http://jonbarron.info/mipnerf">project page</a>
+        /
+              <a href="https://arxiv.org/abs/2103.13415">arXiv</a>
+        /
+              <a href="https://www.youtube.com/watch?v=EpH175PY1A0">video</a>
+              <p></p>
+              <p>We prefilter the positional encoding function and train NeRF to generate anti-aliased renderings.</p>
+            </td>
+          </tr> 
+
+
+          <tr onmouseout="snerg_stop()" onmouseover="snerg_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='snerg_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="img/bakenerf.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='img/bakenerf160.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function snerg_start() {
+                  document.getElementById('snerg_image').style.opacity = "1";
+                }
+
+                function snerg_stop() {
+                  document.getElementById('snerg_image').style.opacity = "0";
+                }
+                snerg_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+              <a href="http://nerf.live">
+                <papertitle>Baking Neural Radiance Fields for Real-Time View Synthesis</papertitle>
+              </a>
+              <br>
+              <a href="https://phogzone.com/">Peter Hedman</a>,
+              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+              <strong>Ben Mildenhall</strong>,
+              <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+              <a href="https://www.pauldebevec.com/">Paul Debevec</a>
+              <br>
+        <em>arXiv</em>, 2021 
+              <br>
+              <a href="http://nerf.live">project page</a>
+        <!-- / -->
+              <!-- <a href="http://arxiv.org/">arXiv</a> -->
+        /
+              <a href="https://www.youtube.com/watch?v=5jKry8n5YO8">video</a>
+        /
+              <a href="https://nerf.live/#demos">demo</a>
+              <p></p>
+              <p>We bake a trained NeRF into a sparse voxel grid of colors and features in order to render it in real-time.</p>
+            </td>
+          </tr> 
+
+
           <tr onmouseout="winr_stop()" onmouseover="winr_start()">
             <td width="25%">
               <div class="one">
@@ -87,8 +178,7 @@
             </td>
             <td valign="top" width="75%">
               <a href="http://www.matthewtancik.com/learnit">
-                <papertitle>Learned Initializations for Optimizing Coordinate-Based Neural Representations
-</papertitle>
+                <papertitle>Learned Initializations for Optimizing Coordinate-Based Neural Representations</papertitle>
               </a>
               <br>
               <a href="http://matthewtancik.com/">Matthew Tancik*</a>,
@@ -106,8 +196,8 @@
               <a href="http://arxiv.org/abs/2012.02189">arXiv</a>
         /
               <a href="https://www.youtube.com/watch?v=A-r9itCzcyo">video</a>
-<!--         /
-              <a href="https://github.com/tancik/">code</a> -->
+        /
+              <a href="https://github.com/tancik/learnit">code</a>
               <p></p>
               <p>We use meta-learning to find weight initializations for coordinate-based MLPs that allow them to converge faster and generalize better.</p>
             </td>
@@ -641,6 +731,23 @@
         </td>
       </tr>
       </table>
+      <table width="100%" align="center" border="0" cellpadding="20">
+      <tr>
+        <td width="25%"><img src="img/cs148_rt.jpg" alt="prl" width="160"></td>
+        <td width="75%" valign="top">
+        <p>
+          <a href="cs148_raytracing">
+          <papertitle>Ray Tracer</papertitle>
+          </a>
+          <br>
+          <em>CS148 assignment</em>, Fall 2012
+        <p><br>
+          Implemented a ray tracer with reflections, refractions, soft shadows, and depth of field.
+        </p>
+        </p>
+        </td>
+      </tr>
+      </table>
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
       <tr>
         <td>
@@ -689,6 +796,12 @@
           <papertitle>Rachmaninoff - Rhapsody on a Theme of Paganini</papertitle> 
           </a><br>
           With Stanford Symphony Orchestra, Spring 2015
+          <br><br>
+          <a href="https://www.youtube.com/watch?v=0PSZMvJwYEc&list=PLea0bjZsDqxuRL0lCcLZ5oTEu4EVITAmf&index=2">
+          <papertitle>Brahms - Piano Quintet</papertitle>
+          </a>
+          <br>
+          Recital at Stanford, Winter 2015
           <br>
         </p>
         </td>
@@ -701,7 +814,7 @@
         <p align="right">
           <font size="2">
           Yep it's another <a href="https://jonbarron.info">Jon Barron</a> website. <br>
-          Last updated January 2021.
+          Last updated March 2021.
 	    </font>
         </p>
         </td>
