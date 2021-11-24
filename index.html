@@ -65,6 +65,94 @@
 
   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
     
+          <tr onmouseout="rawnerf_stop()" onmouseover="rawnerf_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='rawnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="img/candle_crop_vid_fasterpull_240.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='img/candle_image0_patch_darker.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function rawnerf_start() {
+                  document.getElementById('rawnerf_image').style.opacity = "1";
+                }
+
+                function rawnerf_stop() {
+                  document.getElementById('rawnerf_image').style.opacity = "0";
+                }
+                rawnerf_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+              <a href="rawnerf/index.html">
+                <papertitle>NeRF in the Dark: High Dynamic Range View Synthesis from Noisy Raw Images</papertitle>
+              </a>
+              <br>
+              <strong>Ben Mildenhall</strong>,
+              <a href="https://phogzone.com/">Peter Hedman</a>,
+              <a href="http://www.ricardomartinbrualla.com/">Ricardo Martin-Brualla</a>,
+              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+              <a href="https://jonbarron.info/">Jonathan Barron</a>
+              <br>
+        <em>arXiv</em>, 2021
+              <br>
+              <a href="rawnerf/index.html">project page</a>
+        /
+              <a href="https://arxiv.org/">arXiv</a>
+        /
+              <a href="https://www.youtube.com/">video</a>
+              <p></p>
+              <p>We train RawNeRF directly on linear raw images, enabling new HDR view synthesis applications and greatly increasing robustness to camera noise.</p>
+            </td>
+          </tr> 
+
+          <tr onmouseout="mip360_stop()" onmouseover="mip360_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='mip360_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="img/mip360_sat.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='img/mip360_sat.jpeg' width="160">
+              </div>
+              <script type="text/javascript">
+                function mip360_start() {
+                  document.getElementById('mip360_image').style.opacity = "1";
+                }
+
+                function mip360_stop() {
+                  document.getElementById('mip360_image').style.opacity = "0";
+                }
+                mip360_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="http://jonbarron.info/mipnerf360">
+                <papertitle>Mip-NeRF 360: Unbounded Anti-Aliased Neural Radiance Fields</papertitle>
+              </a>
+              <br>
+              <strong>Jonathan T. Barron</strong>,
+              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+              <a href="https://scholar.harvard.edu/dorverbin/home">Dor Verbin</a>,
+              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+              <a href="https://phogzone.com/">Peter Hedman</a>
+              <br>
+              <em>arXiv</em>, 2021
+              <br>
+              <a href="http://jonbarron.info/mipnerf360">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2111.12077">arXiv</a>
+              /
+              <a href="https://youtu.be/YStDS2-Ln1s">video</a>
+              <p></p>
+              <p>mip-NeRF can be extended to produce realistic results on unbounded scenes.</p>
+            </td>
+          </tr> 
+
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+    
           <tr onmouseout="mipnerf_stop()" onmouseover="mipnerf_start()">
             <td width="25%">
               <div class="one">
@@ -97,13 +185,15 @@
               <a href="http://www.ricardomartinbrualla.com/">Ricardo Martin-Brualla</a>,
               <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>
               <br>
-        <em>International Conference on Computer Vision (ICCV)</em>, 2021   <font color="red"><strong>(oral)</strong></font>
+        <em>International Conference on Computer Vision (ICCV)</em>, 2021   <font color="red"><strong>(Best Paper Honorable Mention)</strong></font>
               <br>
               <a href="http://jonbarron.info/mipnerf">project page</a>
         /
               <a href="https://arxiv.org/abs/2103.13415">arXiv</a>
         /
               <a href="https://www.youtube.com/watch?v=EpH175PY1A0">video</a>
+        /
+              <a href="https://github.com/google/mipnerf">code</a>
               <p></p>
               <p>We prefilter the positional encoding function and train NeRF to generate anti-aliased renderings.</p>
             </td>
@@ -144,8 +234,8 @@
         <em>International Conference on Computer Vision (ICCV)</em>, 2021   <font color="red"><strong>(oral)</strong></font> 
               <br>
               <a href="http://nerf.live">project page</a>
-        <!-- / -->
-              <!-- <a href="http://arxiv.org/">arXiv</a> -->
+        /
+              <a href="https://arxiv.org/abs/2103.14645">arXiv</a>
         /
               <a href="https://www.youtube.com/watch?v=5jKry8n5YO8">video</a>
         /
@@ -207,7 +297,10 @@
           <tr onmouseout="nerv_stop()" onmouseover="nerv_start()">
             <td width="25%">
               <div class="one">
-                <div class="two" id='nerv_image'><img src='img/hotdog.gif' width="160"></div>
+                <div class="two" id='nerv_image'><video  width="160" muted autoplay loop>
+                <source src="img/hotdog.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
                 <img src='img/hotdog.png' width="160">
               </div>
               <script type="text/javascript">
@@ -337,7 +430,10 @@
           <tr onmouseout="nerf_stop()" onmouseover="nerf_start()">
             <td width="25%">
               <div class="one">
-                <div class="two" id='nerf_image'><img src='img/vase_small.gif' width="160"></div>
+                <div class="two" id='nerf_image'><video  width="160" muted autoplay loop>
+                <source src="img/vase_small.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
                 <img src='img/vase_still.png' width="160">
               </div>
               <script type="text/javascript">
@@ -431,8 +527,10 @@
     
           <tr onmouseout="lighthouse_stop()" onmouseover="lighthouse_start()">
             <td width="25%">
-              <div class="one">
-                <div class="two" id='lh_image'><img src='img/rings_crop.gif' width="160"></div>
+              <div class="two" id='lh_image'><video  width="160" muted autoplay loop>
+              <source src="img/rings_crop.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video></div>
                 <img src='img/rings.png' width="160">
               </div>
               <script type="text/javascript">
@@ -475,7 +573,10 @@
           <tr onmouseout="stamp_stop()" onmouseover="stamp_start()">
             <td width="25%">
               <div class="one">
-                <div class="two" id='stamp_image'><img src='img/steg_small.gif' width="160"></div>
+                <div class="two" id='stamp_image'><video  width="160" muted autoplay loop>
+                <source src="img/steg_small.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
                 <img src='img/stamp0.png' width="160">
               </div>
               <script type="text/javascript">
@@ -515,7 +616,10 @@
           <tr onmouseout="llff_stop()" onmouseover="llff_start()">
             <td width="25%">
               <div class="one">
-                <div class="two" id='llff_image'><img src='img/fern160.gif' width="160"></div>
+                <div class="two" id='llff_image'><video  width="160" muted autoplay loop>
+                <source src="img/fern160.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
                 <img src='img/fern.jpg' width="160">
               </div>
               <script type="text/javascript">
