@@ -37,7 +37,7 @@
           I did my undergrad at <a href="http://cs.stanford.edu">Stanford University</a> and worked at <a href="https://graphics.pixar.com/research/">Pixar Research</a> in the summer of 2014.
         </p>
               <p style="text-align:center">
-          <a href="mailto:bmild@cs.berkeley.edu">Email</a> &nbsp/&nbsp
+          <a href="mailto:me@bmild.com">Email</a> &nbsp/&nbsp
           <a href="data/cv.pdf">CV</a> &nbsp/&nbsp
           <a href="https://scholar.google.com/citations?user=NozIDL8AAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
           <a href="https://twitter.com/BenMildenhall">Twitter</a> &nbsp/&nbsp
@@ -58,6 +58,52 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="blocknerf_stop()" onmouseover="blocknerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='blocknerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="img/grace_trim_square_320_crf25.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='img/grace_009.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function blocknerf_start() {
+                  document.getElementById('blocknerf_image').style.opacity = "1";
+                }
+
+                function blocknerf_stop() {
+                  document.getElementById('blocknerf_image').style.opacity = "0";
+                }
+                blocknerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://waymo.com/research/block-nerf/">
+                <papertitle>Block-NeRF: Scalable Large Scene Neural View Synthesis</papertitle>
+              </a>
+              <br>
+              <a href="http://matthewtancik.com/">Matthew Tancik</a>,
+              <a href="http://casser.io/">Vincent Casser</a>,
+              <a href="https://sites.google.com/site/skywalkeryxc/">Xinchen Yan</a>,
+              <a href="https://scholar.google.com/citations?user=5mJUkI4AAAAJ&hl=en">Sabeek Pradhan</a>,
+              <strong>Ben Mildenhall</strong>,
+              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+              <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+              <a href="https://scholar.google.de/citations?user=pZuaUlwAAAAJ&hl=en">Henrik Kretzschmar</a>
+              <br>
+        <em>arXiv</em>, 2022
+              <br>
+              <a href="https://waymo.com/research/block-nerf/">project page</a>
+        /
+              <a href="https://arxiv.org/abs/2202.05263">arXiv</a>
+        /
+              <a href="https://www.youtube.com/watch?v=6lGMCAzBzOQ">video</a>
+              <p></p>
+              <p>We build city-scale scenes from many NeRFs, trained using millions of images.</p>
+            </td>
+          </tr> 
     
           <tr onmouseout="rawnerf_stop()" onmouseover="rawnerf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -227,6 +273,8 @@
               <a href="https://arxiv.org/abs/2112.01455">arXiv</a>
         /
               <a href="https://www.youtube.com/watch?v=1Fke6w46tv4">video</a>
+        /
+              <a herf="https://github.com/google-research/google-research/tree/master/dreamfields">code</a>
               <p></p>
               <p>Supervising the CLIP embeddings of NeRF renderings allows us to generate 3D objects from text prompts alone.</p>
             </td>
@@ -314,6 +362,49 @@
               <p></p>
               <p>
               We apply dense depth completion techniques to freely-available sparse stereo data to guide NeRF reconstructions from few input images.
+              </p>
+            </td>
+          </tr>
+
+          
+          <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='malle_image'>
+                  <img src='img/MalleConv_after.jpg' width="160"></div>
+                <img src='img/MalleConv_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function malle_start() {
+                  document.getElementById('malle_image').style.opacity = "1";
+                }
+
+                function malle_stop() {
+                  document.getElementById('malle_image').style.opacity = "0";
+                }
+                malle_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://yifanjiang.net/MalleConv.html">
+                <papertitle>Fast and High-quality Image Denoising via Malleable Convolutions</papertitle>
+              </a>
+              <br>
+              <a href="https://yifanjiang.net/">Yifan Jiang</a>,
+              <a href="https://bartwronski.com/">Bartlomiej Wronski</a>, 
+              <strong>Ben Mildenhall</strong>,
+              <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+              <a href="https://spark.adobe.com/page/CAdrFMJ9QeI2y/">Zhangyang Wang</a>,
+              <a href="https://people.csail.mit.edu/tfxue/">Tianfan Xue</a>
+              <br>
+              <em>arXiv</em>, 2021
+              <br>
+              <a href="https://yifanjiang.net/MalleConv.html">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2201.00392">arXiv</a>
+              <p></p>
+              <p>
+              We denoise images efficiently by predicting spatially-varying kernels at low resolution and using a fast fused op to jointly upsample and apply these kernels at full resolution.
               </p>
             </td>
           </tr>
@@ -642,6 +733,8 @@
         <a href="https://www.youtube.com/watch?v=nCpGStnayHk">two minute papers</a>
   /
         <a href="https://paperswithcode.com/method/nerf">papers with code</a>
+  /
+        <a href="https://www.wired.com/story/new-way-ai-see-3d/">wired</a>
               <p></p>
               <p>We optimize a simple fully-connected network to represent a single scene as a volume, then use volume rendering to do view synthesis.</p>
             </td>
@@ -1098,7 +1191,7 @@
         <p align="right">
           <font size="2">
           Yep it's another <a href="https://jonbarron.info">Jon Barron</a> website. <br>
-          Last updated December 2021.
+          Last updated February 2022.
       </font>
         </p>
         </td>
