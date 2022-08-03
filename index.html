@@ -30,7 +30,7 @@
             <td style="padding:2.5%;width:63%;vertical-align:middle">
               <p style="text-align:center">
           <name>Ben Mildenhall</name>
-        </p><p>I am a research scientist at <a href="https://ai.google/research">Google Research</a>, where I work on problems in computer vision and graphics. I recently received my PhD from <a href="http://eecs.berkely.edu">UC Berkeley</a>, where I was advised by <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html">Ren Ng</a> and supported by a <a href="http://hertzfoundation.org/">Hertz fellowship</a>.
+        </p><p>I am a research scientist at <a href="https://ai.google/research">Google Research</a>, where I work on problems in computer vision and graphics. I received my PhD from <a href="http://eecs.berkely.edu">UC Berkeley</a> in 2020, where I was advised by <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html">Ren Ng</a> and supported by a <a href="http://hertzfoundation.org/">Hertz fellowship</a>.
         </p>
         <p>
           In the summer of 2017, I was an intern in <a href="http://graphics.stanford.edu/~levoy/">Marc Levoy's</a> group in <a href="https://research.google.com/">Google Research</a>. In the summer of 2018, I worked with <a href="https://github.com/rodrygojose">Rodrigo Ortiz-Cayon</a> and <a href="https://abhishekkar.info/">Abhishek Kar</a> at <a href="https://fyusion.com/">Fyusion</a>.
@@ -58,6 +58,49 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    
+          <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='malle_image'>
+                  <img src='img/MalleConv_after.jpg' width="160"></div>
+                <img src='img/MalleConv_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function malle_start() {
+                  document.getElementById('malle_image').style.opacity = "1";
+                }
+
+                function malle_stop() {
+                  document.getElementById('malle_image').style.opacity = "0";
+                }
+                malle_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://yifanjiang.net/MalleConv.html">
+                <papertitle>Fast and High-quality Image Denoising via Malleable Convolutions</papertitle>
+              </a>
+              <br>
+              <a href="https://yifanjiang.net/">Yifan Jiang</a>,
+              <a href="https://bartwronski.com/">Bartlomiej Wronski</a>, 
+              <strong>Ben Mildenhall</strong>,
+              <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+              <a href="https://spark.adobe.com/page/CAdrFMJ9QeI2y/">Zhangyang Wang</a>,
+              <a href="https://people.csail.mit.edu/tfxue/">Tianfan Xue</a>
+              <br>
+              <em>ECCV</em>, 2022
+              <br>
+              <a href="https://yifanjiang.net/MalleConv.html">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2201.00392">arXiv</a>
+              <p></p>
+              <p>
+              We denoise images efficiently by predicting spatially-varying kernels at low resolution and using a fast fused op to jointly upsample and apply these kernels at full resolution.
+              </p>
+            </td>
+          </tr>
+
     
           <tr onmouseout="rawnerf_stop()" onmouseover="rawnerf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -97,6 +140,8 @@
               <a href="https://arxiv.org/abs/2111.13679">arXiv</a>
         /
               <a href="https://www.youtube.com/watch?v=JtBS4KBcKVc">video</a>
+        /
+              <a href="https://github.com/google-research/multinerf">code</a>
               <p></p>
               <p>We train RawNeRF directly on linear raw camera images, enabling new HDR view synthesis applications and greatly increasing robustness to camera noise.</p>
             </td>
@@ -140,6 +185,8 @@
               <a href="https://arxiv.org/abs/2111.12077">arXiv</a>
               /
               <a href="https://youtu.be/YStDS2-Ln1s">video</a>
+              /
+              <a href="https://github.com/google-research/multinerf">code</a>
               <p></p>
               <p>We extend mip-NeRF to produce photorealistic results on unbounded scenes.</p>
             </td>
@@ -184,6 +231,8 @@
               <a href="https://arxiv.org/abs/2112.03907">arXiv</a>
         /
               <a href="https://youtu.be/qrdRH9irAlk">video</a>
+        /
+              <a href="https://github.com/google-research/multinerf">code</a>
               <p></p>
               <p>Explicitly modeling reflections in NeRF produces realistic shiny surfaces and accurate surface normals, and lets you edit materials.</p>
             </td>
@@ -367,50 +416,6 @@
           </tr>
 
           
-          <tr onmouseout="malle_stop()" onmouseover="malle_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='malle_image'>
-                  <img src='img/MalleConv_after.jpg' width="160"></div>
-                <img src='img/MalleConv_before.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function malle_start() {
-                  document.getElementById('malle_image').style.opacity = "1";
-                }
-
-                function malle_stop() {
-                  document.getElementById('malle_image').style.opacity = "0";
-                }
-                malle_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://yifanjiang.net/MalleConv.html">
-                <papertitle>Fast and High-quality Image Denoising via Malleable Convolutions</papertitle>
-              </a>
-              <br>
-              <a href="https://yifanjiang.net/">Yifan Jiang</a>,
-              <a href="https://bartwronski.com/">Bartlomiej Wronski</a>, 
-              <strong>Ben Mildenhall</strong>,
-              <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
-              <a href="https://spark.adobe.com/page/CAdrFMJ9QeI2y/">Zhangyang Wang</a>,
-              <a href="https://people.csail.mit.edu/tfxue/">Tianfan Xue</a>
-              <br>
-              <em>arXiv</em>, 2021
-              <br>
-              <a href="https://yifanjiang.net/MalleConv.html">project page</a>
-              /
-              <a href="https://arxiv.org/abs/2201.00392">arXiv</a>
-              <p></p>
-              <p>
-              We denoise images efficiently by predicting spatially-varying kernels at low resolution and using a fast fused op to jointly upsample and apply these kernels at full resolution.
-              </p>
-            </td>
-          </tr>
-
-  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-    
           <tr onmouseout="mipnerf_stop()" onmouseover="mipnerf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -1012,7 +1017,7 @@
           dcam_stop()
           </script>
         </td>
-        <td width="75%" valign="top">
+      <td style="padding:20px;width:75%;vertical-align:middle">
         <p>
           <a href="https://waller-lab.github.io/DiffuserCam/">
           <papertitle>DiffuserCam: Lensless Single-exposure 3D Imaging</papertitle>
@@ -1036,7 +1041,7 @@
 
       <tr>
         <td style="padding:20px;width:25%;vertical-align:middle"><img src="img/microflakes.png" alt="microflakes" width="160" height="160"></td>
-        <td width="75%" valign="top">
+      <td style="padding:20px;width:75%;vertical-align:middle">
         <p>
           <a href="data/microflake.pdf">
           <papertitle>Approximations for the distribution of microflake normals</papertitle>
@@ -1053,7 +1058,7 @@
       </tr>
       <tr>
         <td style="padding:20px;width:25%;vertical-align:middle"><img src="img/sosmc.png" alt="sosmc" width="160"></td>
-        <td width="75%" valign="top">
+      <td style="padding:20px;width:75%;vertical-align:middle">
         <p>
         <p>
           <a href="https://dritchie.github.io/pdf/sosmc.pdf">
@@ -1084,7 +1089,7 @@
       <tr>
         <td style="padding:20px;width:25%;vertical-align:middle">
           <a href="img/objtest20.png"><img src="img/objtest20.png" alt="prl" width="160"></a></td>
-        <td width="75%" valign="center">
+      <td style="padding:20px;width:75%;vertical-align:middle">
         <p>
         <p>
           <a href="data/cs348bproject.pdf">
@@ -1102,7 +1107,7 @@
       <tr>
         <td style="padding:20px;width:25%;vertical-align:middle">
           <img src="img/cs148_rt.jpg" alt="prl" width="160"></td>
-        <td width="75%" valign="center">
+      <td style="padding:20px;width:75%;vertical-align:middle">
         <p>
         <p>
           <a href="cs148_raytracing">
@@ -1191,7 +1196,7 @@
         <p align="right">
           <font size="2">
           Yep it's another <a href="https://jonbarron.info">Jon Barron</a> website. <br>
-          Last updated March 2022.
+          Last updated August 2022.
       </font>
         </p>
         </td>
