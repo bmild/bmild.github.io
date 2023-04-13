@@ -59,7 +59,139 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+    <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='zipnerf_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="img/portalscrop.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/portalscrop.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function zipnerf_start() {
+            document.getElementById('zipnerf_image').style.opacity = "1";
+          }
+
+          function zipnerf_stop() {
+            document.getElementById('zipnerf_image').style.opacity = "0";
+          }
+          zipnerf_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="http://jonbarron.info/zipnerf">
+          <papertitle>Zip-NeRF: Anti-Aliased Grid-Based Neural Radiance Fields</papertitle>
+        </a>
+        <br>
+        <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+        <strong>Ben Mildenhall</strong>,
+        <a href="https://scholar.harvard.edu/dorverbin/home">Dor Verbin</a>,
+        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+        <a href="https://phogzone.com/">Peter Hedman</a>
+        <br>
+        <em>arXiv</em>, 2023
+        <br>
+        <a href="http://jonbarron.info/zipnerf">project page</a>
+        /
+        <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a>
+        /
+        <a href="https://arxiv.org/abs/TODO">arXiv</a>
+        <p></p>
+        <p>
+        Combining mip-NeRF 360 and Instant NGP lets us reconstruct huge scenes.
+        </p>
+      </td>
+    </tr>
     
+    
+    <tr onmouseout="db3d_stop()" onmouseover="db3d_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='db3d_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="img/owl.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/owl.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function db3d_start() {
+            document.getElementById('db3d_image').style.opacity = "1";
+          }
+
+          function db3d_stop() {
+            document.getElementById('db3d_image').style.opacity = "0";
+          }
+          db3d_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://dreambooth3d.github.io/">
+          <papertitle>DreamBooth3D: Subject-Driven Text-to-3D Generation</papertitle>
+        </a>
+        <br>
+        
+<a href="https://amitraj93.github.io/">Amit Raj</a>, <a href="https://www.linkedin.com/in/srinivas-kaza-64223b74">Srinivas Kaza</a>, <a href="https://poolio.github.io/">Ben Poole</a>, <a href="https://m-niemeyer.github.io/">Michael Niemeyer</a>, <a href="https://natanielruiz.github.io/">Nataniel Ruiz</a>, 
+<strong>Ben Mildenhall</strong>, <a href="https://scholar.google.com/citations?user=I2qheksAAAAJ">Shiran Zada</a>, <a href="https://kfiraberman.github.io/">Kfir Aberman</a>, <a href="http://people.csail.mit.edu/mrub/">Michael Rubinstein</a>, 
+              <a href="https://jonbarron.info/">Jonathan T. Barron</a>, <a href="http://people.csail.mit.edu/yzli/">Yuanzhen Li</a>, <a href="https://varunjampani.github.io/">Varun Jampani</a>
+        <br>
+        <em>arXiv</em>, 2023
+        <br>
+        <a href="https://dreambooth3d.github.io/">project page</a> / 
+        <a href="https://arxiv.org/abs/2303.13508">arXiv</a>
+        <p></p>
+        <p>Combining DreamBooth (personalized text-to-image) and DreamFusion (text-to-3D) yields high-quality, subject-specific 3D assets with text-driven modifications</p>
+      </td>
+    </tr>
+
+    
+
+    <tr onmouseout="alignerf_stop()" onmouseover="alignerf_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='alignerf_image'>
+            <img src='img/alignerf_after.jpg' width="160"></div>
+          <img src='img/alignerf_before.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function alignerf_start() {
+            document.getElementById('alignerf_image').style.opacity = "1";
+          }
+
+          function alignerf_stop() {
+            document.getElementById('alignerf_image').style.opacity = "0";
+          }
+          alignerf_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://yifanjiang19.github.io/alignerf">
+          <papertitle>AligNeRF: High-Fidelity Neural Radiance Fields via Alignment-Aware Training
+</papertitle>
+        </a>
+        <br>
+        <a href="https://yifanjiang.net/">Yifan Jiang</a>,
+        <a href="https://phogzone.com/">Peter Hedman</a>, 
+        <strong>Ben Mildenhall</strong>,
+        <a href="https://ir1d.github.io/">Dejia Xu</a>, 
+        <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+        <a href="https://spark.adobe.com/page/CAdrFMJ9QeI2y/">Zhangyang Wang</a>,
+        <a href="https://tianfan.info/">Tianfan Xue</a>
+        <br>
+        <em>CVPR</em>, 2023
+        <br>
+        <a href="https://yifanjiang19.github.io/alignerf">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2211.09682">arXiv</a>
+        <p></p>
+        <p>
+        Accounting for misalignment due to scene motion or calibration errors improves NeRF reconstruction quality.
+        </p>
+      </td>
+    </tr>
+
           <tr onmouseout="dreamfusion_stop()" onmouseover="dreamfusion_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -1242,7 +1374,7 @@
         <p align="right">
           <font size="2">
           Yep it's another <a href="https://jonbarron.info">Jon Barron</a> website. <br>
-          Last updated March 2023.
+          Last updated April 2023.
       </font>
         </p>
         </td>

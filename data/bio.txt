@@ -3,5 +3,5 @@ the intersection of graphics and computer vision, specializing in view synthesis
 and inverse rendering. He completed his PhD in computer science from UC Berkeley 
 in 2020, advised by Ren Ng and supported by a Hertz Fellowship, and received the 
 ACM Doctoral Dissertation Award Honorable Mention and David J. Sakrison Memorial 
-Prize for his thesis work on neural radiance fields. He has received Best Paper 
-Honorable Mentions at ECCV 2020, ICCV 2021, and CVPR 2022.
+Prize for his thesis work on neural radiance fields. He has received paper
+awards at ECCV 2020, ICCV 2021, CVPR 2022, and ICLR 2023.
