@@ -61,6 +61,183 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+    <tr onmouseout="camp_stop()" onmouseover="camp_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='camp_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="img/camp.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/camp.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function camp_start() {
+            document.getElementById('camp_image').style.opacity = "1";
+          }
+
+          function camp_stop() {
+            document.getElementById('camp_image').style.opacity = "0";
+          }
+          camp_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://camp-nerf.github.io/">
+          <papertitle>CamP: Camera Preconditioning for Neural Radiance Fields</papertitle>
+        </a>
+        <br>
+        <a href="https://keunhong.com/">Keunhong Park</a>,
+        <a href="https://henzler.github.io/">Philipp Henzler</a>,
+        <strong>Ben Mildenhall</strong>,
+        <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+        <a href="http://www.ricardomartinbrualla.com/">Ricardo Martin-Brualla</a>
+        <br>
+        <em>arXiv</em>, 2023
+        <br>
+        <a href="https://camp-nerf.github.io/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2308.10902">arXiv</a>
+        <p></p>
+        <p>
+        Preconditioning based on camera parameterization helps NeRF and camera extrinsics/intrinsics optimize better together.
+        </p>
+      </td>
+    </tr>
+
+
+    <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='zipnerf_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="img/portalscrop.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/portalscrop.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function zipnerf_start() {
+            document.getElementById('zipnerf_image').style.opacity = "1";
+          }
+
+          function zipnerf_stop() {
+            document.getElementById('zipnerf_image').style.opacity = "0";
+          }
+          zipnerf_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="http://jonbarron.info/zipnerf">
+          <papertitle>Zip-NeRF: Anti-Aliased Grid-Based Neural Radiance Fields</papertitle>
+        </a>
+        <br>
+        <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+        <strong>Ben Mildenhall</strong>,
+        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+        <a href="https://phogzone.com/">Peter Hedman</a>
+        <br>
+        <em>ICCV</em>, 2023   <font color="red"><strong>(oral)</strong></font>
+        <br>
+        <a href="http://jonbarron.info/zipnerf">project page</a>
+        /
+        <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a>
+        /
+        <a href="https://arxiv.org/abs/2304.06706">arXiv</a>
+        <p></p>
+        <p>
+        Combining mip-NeRF 360 and Instant NGP lets us reconstruct huge scenes.
+        </p>
+      </td>
+    </tr>
+    
+    
+    <tr onmouseout="db3d_stop()" onmouseover="db3d_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='db3d_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="img/owl.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/owl.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function db3d_start() {
+            document.getElementById('db3d_image').style.opacity = "1";
+          }
+
+          function db3d_stop() {
+            document.getElementById('db3d_image').style.opacity = "0";
+          }
+          db3d_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://dreambooth3d.github.io/">
+          <papertitle>DreamBooth3D: Subject-Driven Text-to-3D Generation</papertitle>
+        </a>
+        <br>
+        
+<a href="https://amitraj93.github.io/">Amit Raj</a>, <a href="https://www.linkedin.com/in/srinivas-kaza-64223b74">Srinivas Kaza</a>, <a href="https://poolio.github.io/">Ben Poole</a>, <a href="https://m-niemeyer.github.io/">Michael Niemeyer</a>, <a href="https://natanielruiz.github.io/">Nataniel Ruiz</a>, 
+<strong>Ben Mildenhall</strong>, <a href="https://scholar.google.com/citations?user=I2qheksAAAAJ">Shiran Zada</a>, <a href="https://kfiraberman.github.io/">Kfir Aberman</a>, <a href="http://people.csail.mit.edu/mrub/">Michael Rubinstein</a>, 
+              <a href="https://jonbarron.info/">Jonathan T. Barron</a>, <a href="http://people.csail.mit.edu/yzli/">Yuanzhen Li</a>, <a href="https://varunjampani.github.io/">Varun Jampani</a>
+        <br>
+        <em>ICCV</em>, 2023
+        <br>
+        <a href="https://dreambooth3d.github.io/">project page</a> / 
+        <a href="https://arxiv.org/abs/2303.13508">arXiv</a>
+        <p></p>
+        <p>Combining DreamBooth (personalized text-to-image) and DreamFusion (text-to-3D) yields high-quality, subject-specific 3D assets with text-driven modifications</p>
+      </td>
+    </tr>
+
+
+    <tr onmouseout="eclipse_stop()" onmouseover="eclipse_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='eclipse_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="img/eclipse_after.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/eclipse_before.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function eclipse_start() {
+            document.getElementById('eclipse_image').style.opacity = "1";
+          }
+
+          function eclipse_stop() {
+            document.getElementById('eclipse_image').style.opacity = "0";
+          }
+          eclipse_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://dorverbin.github.io/eclipse">
+          <papertitle>Eclipse: Disambiguating Illumination and Materials using Unintended Shadows</papertitle>
+        </a>
+        <br>
+        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+        <strong>Ben Mildenhall</strong>,
+        <a href="https://phogzone.com/">Peter Hedman</a>,
+        <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+        <a href="Todd Zickler">Todd Zickler</a>,
+        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>
+        <br>
+        <em>arXiv</em>, 2023
+        <br>
+        <a href="https://dorverbin.github.io/eclipse">project page</a>
+        /
+        <a href="https://www.youtube.com/watch?v=amQLGyza3EU">video</a>
+        /
+        <a href="https://arxiv.org/abs/2305.16321">arXiv</a>
+        <p></p>
+        <p>
+        Shadows cast by unobserved occluders provide a high-frequency cue for recovering illumination and materials.
+        </p>
+      </td>
+    </tr>
+
+
     <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
@@ -155,139 +332,6 @@
         <p>
         We achieve real-time view synthesis using a volumetric rendering model with a compact representation combining a sparse 3D feature grid and 2D feature planes.
         </p>
-      </td>
-    </tr>
-
-
-    <tr onmouseout="eclipse_stop()" onmouseover="eclipse_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='eclipse_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="img/eclipse_after.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='img/eclipse_before.jpg' width="160">
-        </div>
-        <script type="text/javascript">
-          function eclipse_start() {
-            document.getElementById('eclipse_image').style.opacity = "1";
-          }
-
-          function eclipse_stop() {
-            document.getElementById('eclipse_image').style.opacity = "0";
-          }
-          eclipse_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://dorverbin.github.io/eclipse">
-          <papertitle>Eclipse: Disambiguating Illumination and Materials using Unintended Shadows</papertitle>
-        </a>
-        <br>
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-        <strong>Ben Mildenhall</strong>,
-        <a href="https://phogzone.com/">Peter Hedman</a>,
-        <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
-        <a href="Todd Zickler">Todd Zickler</a>,
-        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>
-        <br>
-        <em>arXiv</em>, 2023
-        <br>
-        <a href="https://dorverbin.github.io/eclipse">project page</a>
-        /
-        <a href="https://www.youtube.com/watch?v=amQLGyza3EU">video</a>
-        /
-        <a href="https://arxiv.org/abs/2305.16321">arXiv</a>
-        <p></p>
-        <p>
-        Shadows cast by unobserved occluders provide a high-frequency cue for recovering illumination and materials.
-        </p>
-      </td>
-    </tr>
-
-
-    <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='zipnerf_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="img/portalscrop.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='img/portalscrop.jpg' width="160">
-        </div>
-        <script type="text/javascript">
-          function zipnerf_start() {
-            document.getElementById('zipnerf_image').style.opacity = "1";
-          }
-
-          function zipnerf_stop() {
-            document.getElementById('zipnerf_image').style.opacity = "0";
-          }
-          zipnerf_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="http://jonbarron.info/zipnerf">
-          <papertitle>Zip-NeRF: Anti-Aliased Grid-Based Neural Radiance Fields</papertitle>
-        </a>
-        <br>
-        <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
-        <strong>Ben Mildenhall</strong>,
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-        <a href="https://phogzone.com/">Peter Hedman</a>
-        <br>
-        <em>arXiv</em>, 2023
-        <br>
-        <a href="http://jonbarron.info/zipnerf">project page</a>
-        /
-        <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a>
-        /
-        <a href="https://arxiv.org/abs/2304.06706">arXiv</a>
-        <p></p>
-        <p>
-        Combining mip-NeRF 360 and Instant NGP lets us reconstruct huge scenes.
-        </p>
-      </td>
-    </tr>
-    
-    
-    <tr onmouseout="db3d_stop()" onmouseover="db3d_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='db3d_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="img/owl.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='img/owl.png' width="160">
-        </div>
-        <script type="text/javascript">
-          function db3d_start() {
-            document.getElementById('db3d_image').style.opacity = "1";
-          }
-
-          function db3d_stop() {
-            document.getElementById('db3d_image').style.opacity = "0";
-          }
-          db3d_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://dreambooth3d.github.io/">
-          <papertitle>DreamBooth3D: Subject-Driven Text-to-3D Generation</papertitle>
-        </a>
-        <br>
-        
-<a href="https://amitraj93.github.io/">Amit Raj</a>, <a href="https://www.linkedin.com/in/srinivas-kaza-64223b74">Srinivas Kaza</a>, <a href="https://poolio.github.io/">Ben Poole</a>, <a href="https://m-niemeyer.github.io/">Michael Niemeyer</a>, <a href="https://natanielruiz.github.io/">Nataniel Ruiz</a>, 
-<strong>Ben Mildenhall</strong>, <a href="https://scholar.google.com/citations?user=I2qheksAAAAJ">Shiran Zada</a>, <a href="https://kfiraberman.github.io/">Kfir Aberman</a>, <a href="http://people.csail.mit.edu/mrub/">Michael Rubinstein</a>, 
-              <a href="https://jonbarron.info/">Jonathan T. Barron</a>, <a href="http://people.csail.mit.edu/yzli/">Yuanzhen Li</a>, <a href="https://varunjampani.github.io/">Varun Jampani</a>
-        <br>
-        <em>arXiv</em>, 2023
-        <br>
-        <a href="https://dreambooth3d.github.io/">project page</a> / 
-        <a href="https://arxiv.org/abs/2303.13508">arXiv</a>
-        <p></p>
-        <p>Combining DreamBooth (personalized text-to-image) and DreamFusion (text-to-3D) yields high-quality, subject-specific 3D assets with text-driven modifications</p>
       </td>
     </tr>
 
@@ -1519,7 +1563,7 @@
         <p align="right">
           <font size="2">
           Yep it's another <a href="https://jonbarron.info">Jon Barron</a> website. <br>
-          Last updated May 2023.
+          Last updated August 2023.
       </font>
         </p>
         </td>
