@@ -19,6 +19,35 @@
   
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
   <link rel="icon" type="image/png" href="img/seal_icon.png">
+    
+  <style>
+
+    .pill-container {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px;
+    }
+
+    .pill {
+      border: 1px solid #ddd;
+      padding: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-align: center;
+    }
+
+    .pill:hover {
+      background-color: #f1f1f1;
+    }
+
+    .thumbnail {
+      max-width: 160px;
+      height: auto;
+      transition: filter 0.3s;
+    }
+
+  </style>
+    
 </head>
 
 <body>
@@ -51,6 +80,30 @@
             </td>
           </tr>
         </tbody></table>
+
+<!-- <div class="pill-container">
+  <div class="pill nerf">
+    <a href="https://matthewtancik.com/nerf"><video muted autoplay loop src="img/vase_small.mp4" alt="Nerf"></a>
+    <p><a href="https://matthewtancik.com/nerf"><papertitle>NeRF</papertitle></a></p>
+  </div>
+  
+  <div class="pill mipnerf360">
+    <a href="https://jonbarron.info/mipnerf360"><video muted autoplay loop class="thumbnail" src="img/kitchenlego_square320_crf23.mp4" alt="Mipnerf360"></a>
+    <p><a href="https://jonbarron.info/mipnerf360"><papertitle>mip-NeRF 360</papertitle></a> / <a href="https://jonbarron.info/zipnerf"><papertitle>Zip-NeRF</papertitle></a></p>
+  </div>
+  
+  <div class="pill dreamfusion">
+    <a href="https://dreamfusion3d.github.io/"><video muted autoplay loop class="thumbnail" src="img/dreamfusion.mp4" alt="Dreamfusion"></a>
+    <p><a href="https://dreamfusion3d.github.io/"><papertitle>DreamFusion</papertitle></a></p>
+  </div>
+  
+  <div class="pill reconfusion">
+    <a href="https://reconfusion.github.io/"><video muted autoplay loop class="thumbnail" src="img/recon.mp4" alt="Reconfusion"></a>
+    <p><a href="https://reconfusion.github.io/"><papertitle>ReconFusion</papertitle></a></p>
+  </div>
+</div> -->
+
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
@@ -59,6 +112,103 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+    <tr onmouseout="recon_stop()" onmouseover="recon_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='recon_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="img/recon.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/recon.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function recon_start() {
+            document.getElementById('recon_image').style.opacity = "1";
+          }
+
+          function recon_stop() {
+            document.getElementById('recon_image').style.opacity = "0";
+          }
+          recon_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://reconfusion.github.io/">
+          <papertitle>ReconFusion: 3D Reconstruction with Diffusion Priors</papertitle>
+        </a>
+        <br>
+        <a href="https://www.cs.columbia.edu/~rundi/">Rundi Wu*</a>,
+        <strong>Ben Mildenhall*</strong>,
+        <a href="https://henzler.github.io/">Philipp Henzler</a>,
+        <a href="https://keunhong.com/">Keunhong Park</a>,
+        <a href="https://ruiqigao.github.io/">Ruiqi Gao</a>,
+        <a href="https://scholar.google.com/citations?user=_pKKv2QAAAAJ&hl=en/">Daniel Watson</a>,
+        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>,
+        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+        <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+        <a href="https://poolio.github.io/">Ben Poole</a>,
+        <a href="https://holynski.org/">Aleksander Holynski*</a>
+        <br>
+        <em>arXiv</em>, 2023
+        <br>
+        <a href="https://reconfusion.github.io/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/">arXiv</a>
+        <p></p>
+        <p>
+        Finetune an image diffusion model to accept multiview inputs, then use it to regularize radiance field reconstruction.
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="genten_stop()" onmouseover="genten_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='genten_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="img/genten.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/genten.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function genten_start() {
+            document.getElementById('genten_image').style.opacity = "1";
+          }
+
+          function genten_stop() {
+            document.getElementById('genten_image').style.opacity = "0";
+          }
+          genten_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://powers-of-10.github.io/">
+          <papertitle>Generative Powers of Ten</papertitle>
+        </a>
+        <br>
+        <a href="https://scholar.google.ch/citations?user=v3NXpJAAAAAJ&hl=en">Xiaojuan Wang</a>,
+        <a href="https://www.linkedin.com/in/jannekontkanen/">Janne Kontkanen</a>,
+        <a href="https://homes.cs.washington.edu/~curless/">Brian Curless</a>,
+        <a href="https://www.smseitz.com/">Steve Seitz</a>,
+        <a href="https://www.irakemelmacher.com/">Ira Kemelmacher</a>,<br>
+        <strong>Ben Mildenhall</strong>,
+        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>,
+        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+        <a href="https://holynski.org/">Aleksander Holynski</a>
+        <br>
+        <em>arXiv</em>, 2023
+        <br>
+        <a href="https://reconfusion.github.io/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/">arXiv</a>
+        <p></p>
+        <p>
+        Use a text-to-image model to generate consistent content across drastically varying scales.
+        </p>
+      </td>
+    </tr>
 
 
     <tr onmouseout="camp_stop()" onmouseover="camp_start()">
@@ -136,7 +286,7 @@
         <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
         <a href="https://phogzone.com/">Peter Hedman</a>
         <br>
-        <em>ICCV</em>, 2023   <font color="red"><strong>(oral)</strong></font>
+        <em>ICCV</em>, 2023   <font color="red"><strong>(Best Paper Finalist)</strong></font>
         <br>
         <a href="http://jonbarron.info/zipnerf">project page</a>
         /
@@ -1477,7 +1627,7 @@
       <td style="padding:20px;width:75%;vertical-align:middle">
         <p>
         <p>
-          <a href="cs148_raytracing">
+          <a href="cs148_raytracer/index.html">
           <papertitle>Ray Tracer</papertitle>
           </a>
           <br>
@@ -1563,7 +1713,7 @@
         <p align="right">
           <font size="2">
           Yep it's another <a href="https://jonbarron.info">Jon Barron</a> website. <br>
-          Last updated August 2023.
+          Last updated December 2023.
       </font>
         </p>
         </td>
