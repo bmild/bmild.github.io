@@ -126,6 +126,50 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+    <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='nuvo_image'><video  width=100% muted autoplay loop>
+          <source src="img/nuvo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/nuvo.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function nuvo_start() {
+            document.getElementById('nuvo_image').style.opacity = "1";
+          }
+
+          function nuvo_stop() {
+            document.getElementById('nuvo_image').style.opacity = "0";
+          }
+          nuvo_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://pratulsrinivasan.github.io/nuvo/">
+          <papertitle>Nuvo: Neural UV Mapping for Unruly 3D Representations</papertitle>
+        </a>
+        <br>
+        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+        <a href="http://stephangarbin.com/">Stephan J. Garbin</a>,
+        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+        <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+        <strong>Ben Mildenhall</strong>
+        <br>
+        <em>arXiv</em>, 2023
+        <br>
+        <a href="https://pratulsrinivasan.github.io/nuvo/">project page</a>
+        /
+        <a href="https://www.youtube.com/watch?v=hmJiOSTDQZI">video</a>
+        /
+        <a href="http://arxiv.org/abs/2312.05283">arXiv</a>
+        <p></p>
+        <p>
+        Use neural fields to recover editable UV mappings for challenging geometry (e.g. NeRFs, marching cubes meshes, DreamFusion).
+        </p>
+      </td>
+    </tr>
 
     <tr onmouseout="recon_stop()" onmouseover="recon_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
@@ -158,7 +202,7 @@
         <a href="https://keunhong.com/">Keunhong Park</a>,
         <a href="https://ruiqigao.github.io/">Ruiqi Gao</a>,
         <a href="https://scholar.google.com/citations?user=_pKKv2QAAAAJ&hl=en/">Daniel Watson</a>,
-        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>,
+        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
         <a href="https://dorverbin.github.io/">Dor Verbin</a>,
         <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
         <a href="https://poolio.github.io/">Ben Poole</a>,
@@ -207,7 +251,7 @@
         <a href="https://www.smseitz.com/">Steve Seitz</a>,
         <a href="https://www.irakemelmacher.com/">Ira Kemelmacher</a>,<br>
         <strong>Ben Mildenhall</strong>,
-        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>,
+        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
         <a href="https://dorverbin.github.io/">Dor Verbin</a>,
         <a href="https://holynski.org/">Aleksander Holynski</a>
         <br>
@@ -1726,7 +1770,7 @@
         <p align="right">
           <font size="2">
           Yep it's another <a href="https://jonbarron.info">Jon Barron</a> website. <br>
-          Last updated December 2023.
+          Last updated January 2024.
       </font>
         </p>
         </td>
