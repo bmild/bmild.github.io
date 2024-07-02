@@ -157,7 +157,7 @@
         <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
         <strong>Ben Mildenhall</strong>
         <br>
-        <em>arXiv</em>, 2023
+        <em>ECCV</em>, 2024
         <br>
         <a href="https://pratulsrinivasan.github.io/nuvo/">project page</a>
         /
@@ -170,6 +170,58 @@
         </p>
       </td>
     </tr>
+
+
+    <tr onmouseout="bog_stop()" onmouseover="bog_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='bog_image'><video  width=100% muted autoplay loop>
+          <source src="img/bog.jpg" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/bog.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function bog_start() {
+            document.getElementById('bog_image').style.opacity = "1";
+          }
+
+          function bog_stop() {
+            document.getElementById('bog_image').style.opacity = "0";
+          }
+          bog_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://creiser.github.io/binary_opacity_grid/">
+          <papertitle>Binary Opacity Grids: Capturing Fine Geometric Detail for Mesh-Based View Synthesis
+</papertitle>
+        </a>
+        <br>
+        <a href="https://creiser.github.io/">Christian Reiser</a>,
+        <a href="http://stephangarbin.com/">Stephan J. Garbin</a>,
+        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+        <a href="https://szeliski.org/RichardSzeliski.htm">Richard Szeliski</a>,<br>
+        <strong>Ben Mildenhall</strong>,
+        <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+        <a href="https://phogzone.com/">Peter Hedman</a>*,
+        <a href="https://www.cvlibs.net/">Andreas Geiger</a>*   
+        <br>
+        <em>SIGGRAPH</em>, 2024
+        <br>
+        <a href="https://creiser.github.io/binary_opacity_grid/">project page</a>
+        /
+        <a href="https://www.youtube.com/watch?v=2TPUmGRg8bM">video</a>
+        /
+        <a href="https://arxiv.org/abs/2402.12377">arXiv</a>
+        <p></p>
+        <p>
+        Apply anti-aliasing to a discrete opacity grid to enable highly-detailed mesh recovery.
+        </p>
+      </td>
+    </tr>
+
 
     <tr onmouseout="recon_stop()" onmouseover="recon_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
@@ -208,7 +260,7 @@
         <a href="https://poolio.github.io/">Ben Poole</a>,
         <a href="https://holynski.org/">Aleksander Holynski*</a>
         <br>
-        <em>arXiv</em>, 2023
+        <em>CVPR</em>, 2024
         <br>
         <a href="https://reconfusion.github.io/">project page</a>
         /
@@ -216,6 +268,53 @@
         <p></p>
         <p>
         Finetune an image diffusion model to accept multiview inputs, then use it to regularize radiance field reconstruction.
+        </p>
+      </td>
+    </tr>
+
+
+    <tr onmouseout="eclipse_stop()" onmouseover="eclipse_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='eclipse_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="img/eclipse_after.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/eclipse_before.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function eclipse_start() {
+            document.getElementById('eclipse_image').style.opacity = "1";
+          }
+
+          function eclipse_stop() {
+            document.getElementById('eclipse_image').style.opacity = "0";
+          }
+          eclipse_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://dorverbin.github.io/eclipse">
+          <papertitle>Eclipse: Disambiguating Illumination and Materials using Unintended Shadows</papertitle>
+        </a>
+        <br>
+        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+        <strong>Ben Mildenhall</strong>,
+        <a href="https://phogzone.com/">Peter Hedman</a>,
+        <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+        <a href="Todd Zickler">Todd Zickler</a>,
+        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>
+        <br>
+        <em>CVPR</em>, 2024   <font color="red"><strong>(oral)</strong></font>
+        <br>
+        <a href="https://dorverbin.github.io/eclipse">project page</a>
+        /
+        <a href="https://www.youtube.com/watch?v=amQLGyza3EU">video</a>
+        /
+        <a href="https://arxiv.org/abs/2305.16321">arXiv</a>
+        <p></p>
+        <p>
+        Shadows cast by unobserved occluders provide a high-frequency cue for recovering illumination and materials.
         </p>
       </td>
     </tr>
@@ -255,7 +354,7 @@
         <a href="https://dorverbin.github.io/">Dor Verbin</a>,
         <a href="https://holynski.org/">Aleksander Holynski</a>
         <br>
-        <em>arXiv</em>, 2023
+        <em>CVPR</em>, 2024  <font color="red"><strong>(highlight)</strong></font>
         <br>
         <a href="https://reconfusion.github.io/">project page</a>
         /
@@ -394,53 +493,6 @@
         <a href="https://arxiv.org/abs/2303.13508">arXiv</a>
         <p></p>
         <p>Combining DreamBooth (personalized text-to-image) and DreamFusion (text-to-3D) yields high-quality, subject-specific 3D assets with text-driven modifications</p>
-      </td>
-    </tr>
-
-
-    <tr onmouseout="eclipse_stop()" onmouseover="eclipse_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='eclipse_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="img/eclipse_after.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='img/eclipse_before.jpg' width="160">
-        </div>
-        <script type="text/javascript">
-          function eclipse_start() {
-            document.getElementById('eclipse_image').style.opacity = "1";
-          }
-
-          function eclipse_stop() {
-            document.getElementById('eclipse_image').style.opacity = "0";
-          }
-          eclipse_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://dorverbin.github.io/eclipse">
-          <papertitle>Eclipse: Disambiguating Illumination and Materials using Unintended Shadows</papertitle>
-        </a>
-        <br>
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-        <strong>Ben Mildenhall</strong>,
-        <a href="https://phogzone.com/">Peter Hedman</a>,
-        <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
-        <a href="Todd Zickler">Todd Zickler</a>,
-        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>
-        <br>
-        <em>arXiv</em>, 2023
-        <br>
-        <a href="https://dorverbin.github.io/eclipse">project page</a>
-        /
-        <a href="https://www.youtube.com/watch?v=amQLGyza3EU">video</a>
-        /
-        <a href="https://arxiv.org/abs/2305.16321">arXiv</a>
-        <p></p>
-        <p>
-        Shadows cast by unobserved occluders provide a high-frequency cue for recovering illumination and materials.
-        </p>
       </td>
     </tr>
 
@@ -1560,9 +1612,9 @@
           <strong>Ben Mildenhall</strong>,
           <a href="http://jonbarron.info">Jonathan T. Barron</a>,
           <a href="http://people.csail.mit.edu/jiawen/">Jiawen Chen</a>,
-          Dillon Sharlet,
+          <a href="http://www.dsharlet.com/">Dillon Sharlet</a>,
           <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html">Ren Ng</a>,
-          Robert Carroll <br>
+          <a href="https://scholar.google.com/citations?user=jCsry6sAAAAJ&hl=en">Robert Carroll</a> <br>
         <em>CVPR</em>, 2018   <font color="red"><strong>(spotlight)</strong></font><br>
         <a href="kpn/index.html">project page</a>
         /
@@ -1622,7 +1674,7 @@
           </a>
           <br>
           <a href="https://faculty.engineering.ucdavis.edu/max/">Nelson Max</a>, 
-          Tom Duff, 
+          <a href="http://www.iq0.com/">Tom Duff</a>, 
           <strong>Ben Mildenhall</strong>, 
           <a href="http://students.cec.wustl.edu/~yajieyan/">Yajie Yan</a><br>
           <em>The Visual Computer</em>, 2017
@@ -1770,7 +1822,7 @@
         <p align="right">
           <font size="2">
           Yep it's another <a href="https://jonbarron.info">Jon Barron</a> website. <br>
-          Last updated January 2024.
+          Last updated July 2024.
       </font>
         </p>
         </td>
