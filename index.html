@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-  <link rel="icon" type="image/png" href="img/seal_icon.png">
+  <link rel="icon" type="image/png" href="img/wlt.ico">
     
   <style>
 
@@ -51,6 +51,17 @@
   </style>
     
 </head>
+<!-- 
+cdict = {
+    'main_blue_purple': (163, 173, 239),
+    'deep_green': (33, 62, 12),
+    'vivid_blue': (21, 18, 226),
+    'alt_maroon': (84, 21, 24),
+    'light_green': (198, 244, 79),
+    'light_purple': (231, 199, 243),
+    'white': (255,255,255),
+    'black': (0,0,0),
+} -->
 
 <body>
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -61,7 +72,10 @@
             <td style="padding:2.5%;width:63%;vertical-align:middle">
               <p style="text-align:center">
           <name>Ben Mildenhall</name>
-        </p><p>I work on problems in graphics and 3D computer vision. From 2021 to 2023, I was a research scientist at <a href="https://ai.google/research">Google Research</a>. I received my PhD from <a href="http://eecs.berkely.edu">UC Berkeley</a> in 2020, where I was advised by <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html">Ren Ng</a> and supported by a <a href="http://hertzfoundation.org/">Hertz fellowship</a>.
+        </p><p>I work on problems in graphics and 3D computer vision at <a href="https://worldlabs.ai/" style="color: #1772d0;"  onmouseover="this.style.color='rgb(198, 244, 79)';" onmouseout="this.style.color='#1772d0';">World Labs.</a>
+</p>
+<p>
+          From 2021 to 2023, I was a research scientist at <a href="https://ai.google/research">Google Research</a>. I received my PhD from <a href="http://eecs.berkely.edu">UC Berkeley</a> in 2020, where I was advised by <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html">Ren Ng</a> and supported by a <a href="http://hertzfoundation.org/">Hertz fellowship</a>.
         </p>
         <p>
           In the summer of 2017, I was an intern in <a href="http://graphics.stanford.edu/~levoy/">Marc Levoy's</a> group in <a href="https://research.google.com/">Google Research</a>. In the summer of 2018, I worked with <a href="https://github.com/rodrygojose">Rodrigo Ortiz-Cayon</a> and <a href="https://abhishekkar.info/">Abhishek Kar</a> at <a href="https://fyusion.com/">Fyusion</a>.
@@ -78,7 +92,7 @@
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
     <a href="img/ben_vive.jpg">
-        <img src="img/ben_florence.jpg" width="250px"></a>
+        <img src="img/BenMildenhallHead.jpg" width="250px"></a>
             </td>
           </tr>
         </tbody></table>
@@ -125,6 +139,99 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+    <tr onmouseout="nerfcasting_stop()" onmouseover="nerfcasting_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='nerfcasting_image'><video  width=100% muted autoplay loop>
+          <source src="img/nerfcasting.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/nerfcasting.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function nerfcasting_start() {
+            document.getElementById('nerfcasting_image').style.opacity = "1";
+          }
+
+          function nerfcasting_stop() {
+            document.getElementById('nerfcasting_image').style.opacity = "0";
+          }
+          nerfcasting_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://nerf-casting.github.io/">
+          <papertitle>NeRF-Casting: Improved View-Dependent Appearance with Consistent Reflections</papertitle>
+        </a>
+        <br>
+        
+        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+        <a href="https://phogzone.com/">Peter Hedman</a>,
+        <a href="https://benattal.github.io/">Benjamin Attal</a>, 
+        <strong>Ben Mildenhall</strong>,
+        <a href="https://szeliski.org/RichardSzeliski.htm">Richard Szeliski</a>,
+        <a href="https://jonbarron.info/">Jonathan T. Barron</a>
+        <br>
+        <em>SIGGRAPH Asia</em>, 2024
+        <br>
+        <a href="https://nerf-casting.github.io/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2405.14871">arXiv</a>
+        <p></p>
+        <p>
+        Carefully casting reflection rays lets us synthesize photorealistic specularities in real-world scenes.
+        </p>
+      </td>
+    </tr>
+
+
+    <tr onmouseout="flash_cache_stop()" onmouseover="flash_cache_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='flash_cache_image'><video  width=100% muted autoplay loop>
+          <source src="img/flash_cache.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='img/flash_cache.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function flash_cache_start() {
+            document.getElementById('flash_cache_image').style.opacity = "1";
+          }
+
+          function flash_cache_stop() {
+            document.getElementById('flash_cache_image').style.opacity = "0";
+          }
+          flash_cache_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://benattal.github.io/flash-cache/">
+          <papertitle>Flash Cache: Reducing Bias in Radiance Cache Based Inverse Rendering</papertitle>
+        </a>
+        <br>
+        <a href="https://benattal.github.io/">Benjamin Attal</a>,
+        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+        <strong>Ben Mildenhall</strong>,
+        <a href="https://phogzone.com/">Peter Hedman</a>, 
+        <a href="https://jonbarron.info/">Jonathan T. Barron</a>,
+        <a href="https://www.cs.cmu.edu/~motoole2/">Matthew O'Toole</a>,
+        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>
+        <br>
+        <em>ECCV</em>, 2024   <font color="red"><strong>(oral)</strong></font>
+        <br>
+        <a href="https://benattal.github.io/flash-cache/">project page</a>
+        /
+        <a href="TODO">arXiv</a>
+        <p></p>
+        <p>
+          Radiance caching enables more physically accurate inverse rendering to recover geometry, materials, and lighting from RGB images of an object or scene.
+        </p>
+      </td>
+    </tr>
 
     <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
@@ -1822,7 +1929,7 @@
         <p align="right">
           <font size="2">
           Yep it's another <a href="https://jonbarron.info">Jon Barron</a> website. <br>
-          Last updated July 2024.
+          Last updated August 2024.
       </font>
         </p>
         </td>
